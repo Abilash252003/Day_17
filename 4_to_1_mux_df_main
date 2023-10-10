@@ -1,0 +1,16 @@
+//100 Days of RTL Challenge//
+
+//Abilash P//
+
+//4:1 Multiplexer using data flow modeling//
+
+module mux_4_to_1 (I0, I1, I2, I3, S0, S1, Y);
+
+input  I0, I1, I2, I3, S0, S1;
+output Y;
+
+assign Y = S1 ? (S0 ? I3 : I2) : (S0 ? I1 : I0);
+
+endmodule
+
+ 
